@@ -1,0 +1,8 @@
+.Home {
+  display: grid;
+  grid-template: {
+    columns: 1fr; 
+  }
+  grid-gap: 4em;
+  & .Poster-title { letter-spacing: 0; }
+}

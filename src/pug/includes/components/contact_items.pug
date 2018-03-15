@@ -1,0 +1,9 @@
+mixin contacItems(elements)
+    ul.contact__items.contact
+        each el in elements
+            li.contact__item
+                .contact__ico-container
+                    i.contact__ico.ico.ico--contact(class=`${el.ico}`)
+                p.contact__name-section=`${el.name}`
+                p.contact__description=`${el.description}`
+        a(href="https://docs.google.com/uc?export=download&id=1zgGU860q9s6Jv01rTgRzr8dY9zCVkJzJ" ,target="_blank").btn descargar cv

@@ -1,0 +1,13 @@
+mixin listaImagenes(elements)
+    ul.lista-Imagenes__items
+        each el in elements
+            li.lista-Imagenes__item
+                a(href=`${el.link}`,target="_blank" )
+                    img.lista-Imagenes__img(src=`${el.img}`, alt=`${el.alt}`)
+                .rutas
+                    a.rutas__link.rutas__link--repositorio(href=`${el.repositorio}`,target="_blank")
+                            i.fab.fa-github-square.rutas__icon
+                            span.rutas__text ver repositorio
+                    a.rutas__link.rutas__link--linea(href=`${el.link}`,target="_blank")
+                            i.far.fa-check-square.rutas__icon 
+                            span.rutas__text ver en linea                      

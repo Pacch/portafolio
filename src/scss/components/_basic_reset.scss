@@ -1,0 +1,36 @@
+
+$font-size: 16px;
+
+html {
+  box-sizing: border-box;
+  font-size: $font-size;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li{
+  list-style: none;
+}
+

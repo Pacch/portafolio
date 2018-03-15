@@ -1,0 +1,22 @@
+.l-container,
+[class*="l-container--"] {
+  max-width : 1200px;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.l-container--full {
+  max-width : 100%;
+}
+
+.l-section {
+  padding: 2em;
+}
+
+.l-container--row {
+  display : flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+

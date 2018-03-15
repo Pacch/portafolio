@@ -1,0 +1,45 @@
+.experiencia-laboral,.education,.cursos-talleres{
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title"
+                             "job";
+        grid-gap: 2em;
+        @include from(large){
+            grid-template-columns: 250px 1fr;
+            grid-template-areas: "title job";
+        }
+    }
+    &__title{
+        grid-area: title;
+    }
+    &__items{
+        
+    }
+
+    &__years{
+
+    }
+
+    &__time{
+
+    }
+    &__job{
+
+    }
+    &__labors{
+
+    }
+    &__link{
+        color: black;
+    }
+}
+
+.labors{
+    &__items{
+
+    }
+    &__item{
+
+    }
+}

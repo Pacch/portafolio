@@ -1,0 +1,15 @@
+mixin timeline(timelines)
+    .timeline
+        .timeline__container.timeline__container--timeline
+            ul.timeline__items.timeline__items--timeline
+                each timeline in timelines
+                    li.timeline__item.timeline__item--timeline
+                        .timeline__section-left
+                            p.timeline__years=`${timeline.years}`
+                            p.timeline__time=`${timeline.time}`
+                        .timeline__timeline
+                        .timeline__section-rigth
+                            p.timeline__job=`${timeline.job}`
+                            ul
+                                each item in timeline.labor
+                                    li=`${item}`

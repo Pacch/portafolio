@@ -1,0 +1,37 @@
+include ../components/lista_imagenes.pug
+section.portafolio
+    .portafolio__container.l-container.l-section
+        h2.portafolio__title.section__title portafolio
+        +listaImagenes([
+            {
+                'link': 'https://pacch.github.io/Arduinos/app/',
+                'repositorio':'https://github.com/Pacch/ERP',
+                'img': 'img/arduinos.jpg',
+                'alt': 'arduinos'
+            },
+            {
+                'link': 'https://github.com/Pacch/Flati',
+                'repositorio':'https://github.com/Pacch/ERP',
+                'img': 'img/flati.jpg',
+                'alt': 'flati'
+            },
+            {
+                'link': 'https://pacch.github.io/ERP/',
+                'repositorio':'https://github.com/Pacch/ERP',
+                'img': 'img/peru-erp.jpg',
+                'alt': 'peru-erp'
+            },
+
+            {
+                'link': 'https://pacch.github.io/Arduinos/app/',
+                'repositorio':'https://github.com/Pacch/ERP',
+                'img': 'img/kyoshi.jpg',
+                'alt': 'kyoshi'
+            },
+            {
+                'link': 'https://pacch.github.io/Arduinos/app/',
+                'repositorio':'https://github.com/Pacch/ERP',
+                'img': 'img/invie.jpg',
+                'alt': 'invie'
+            }
+        ])

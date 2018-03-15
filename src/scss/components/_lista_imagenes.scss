@@ -1,0 +1,46 @@
+.lista-Imagenes{
+    &__items{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+    &__item{
+        display: grid;
+        grid-gap: .5em;
+        justify-items: center;
+        
+    }
+    &__img{
+        border: .5em solid #1D1D1D;
+        border-radius: 15px;
+    }
+
+}
+
+.rutas{
+    display: grid;
+    grid-gap: .9em;
+    &__link{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+        &:hover{
+        color: $color_rojo;
+        }
+        &--repositorio{
+
+        }
+        &--linea{
+
+        }
+    }
+    &__icon{
+        font-size: 1.3em;
+    }
+    &__text{
+        font-size: .8em;
+        font-weight: 300;
+        margin: 0 0 0 .5em;
+    }
+}

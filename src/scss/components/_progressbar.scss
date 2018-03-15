@@ -1,0 +1,61 @@
+.progressbar{
+    grid-area: skill;
+    &__title{
+        text-transform: uppercase;
+        color: #2196F3;
+        letter-spacing: 2px;
+    }
+    &__items{
+        display: grid;
+        grid-gap: 1em;
+    }
+    &__item{
+        display: grid;
+        grid-gap: 1em;    
+    }
+    &__name-icon{
+  
+    }
+
+    &__name{
+        color:black;
+        text-transform: uppercase;
+    }
+}
+
+.progress{
+    position:relative;
+    max-width:100%;
+    border-radius:10px;
+    border:1px solid #2196F3;
+    &__container{
+        display: flex;
+    }
+    &__item{
+            font-size: .9em;    
+            border-left:1px solid #3A4149;
+            text-transform:uppercase;
+            text-align:center;
+            color:black;
+            width:33.33%;
+            &:first-child{
+                border-left:none;        
+            }
+    }
+    &__setsize{
+        position:absolute;
+        background:#2196F3;
+        height:100%;
+        z-index:-2;
+        border-radius:10px 0 0 10px;
+    }
+    &__basico{
+        width:33.33%;
+    }
+    &__intermedio{
+        width:66.66%;
+    }
+    &__avanzado{
+        width:100%;
+    }
+  }

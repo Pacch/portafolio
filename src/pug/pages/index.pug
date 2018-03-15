@@ -1,0 +1,18 @@
+extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
+block metatags
+  -var title = 'Portafolio Esquivel.'
+  -var description = 'Bienvenid@, en este sitio encontrarás mi portafolio.'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.Home
+    +headerPoster('./img/portada.jpg', 'Esquivel Luera Juan Harol', 'Todo lo demás será fácil.')
+    include ../includes/blocks/quien_soy.pug
+    include ../includes/blocks/experiencia.pug
+    include ../includes/blocks/education.pug
+    include ../includes/blocks/cursos_talleres.pug
+    include ../includes/blocks/portafolio.pug
+    include ../includes/blocks/contacto.pug
+    include ../includes/blocks/footer.pug

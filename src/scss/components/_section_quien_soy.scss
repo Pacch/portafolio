@@ -1,0 +1,41 @@
+.quiensoy{
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: "title"
+                             "img"
+                             "description"
+                             "skill";
+        grid-gap: 2em;
+        @include from(large){
+            grid-template-columns: 250px 1fr;            
+            grid-template-areas:    "title description"
+                                    "img skill";
+            grid-gap: 2em;
+        }
+    }
+
+    &__img{
+        grid-area: img;
+        border-radius: 50%;
+        grid-area: img;
+        max-width: 150px;
+        margin: 0 auto;
+        @include from(large){
+            margin: initial;
+        }
+    }
+    &__title{
+        grid-area: title;
+        text-align: start;
+    }
+    &__description{
+        grid-area: description;
+        text-align: start;
+        color: #999;
+        font-size: 1.2em;
+    }
+}
+
+
+

@@ -1,0 +1,41 @@
+.contact{
+    grid-area: contact-info;
+    &__items{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: "ico name"
+                               ". description";
+        grid-gap: 0 1em;
+    } 
+    &__ico{
+        grid-area: ico;
+        font-size: 1.2em;
+        &--contact{
+
+        }
+    }
+    &__ico-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+        background: #333;
+        color: white;
+        border-radius: 50%;
+    }
+    &__name-section{
+        grid-area: name;
+        text-transform: uppercase;
+        color: #aaa;
+    }
+    &__description{
+        grid-area: description;
+        color: #333;
+        font-weight: 300;
+    }
+}

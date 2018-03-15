@@ -1,0 +1,51 @@
+$color_primario: #3d3e3e;
+$color_secundario: #2C2E3E;
+$color_rojo: #EE2B47;
+$color_blanco: #F6F6F6;
+
+// $vars: (
+//   primary: #434343,
+//   secondary: #DEDEDE,
+//   accent: #D4671F,
+// );
+
+// $primary: map-get($vars,primary);
+// $secondary: map-get($vars,secondary);
+// $accent: map-get($vars,accent);
+
+// :root {
+//   @each $key, $value in $vars {
+//     --#{$key}: $value;
+//   }
+// }
+
+$breakpoints : (
+  small:  0,
+  medium: 480px,
+  large: 1024px,
+  xlarge: 1440px
+);
+
+
+// $fonts: (
+//         title1: 50px(2.5) 60px(3),
+//         title2: 32px(1.6) 40px(2),
+//         title3: 25px(1.25) 30px(1.5),
+//         base: 20px 30px (1.5),
+//         small: 16px(0.8) 20px(1),
+//         smaller: 14px(0.7) 20px(1)
+// );
+
+$fonts: (
+        title1: 2.5em 3em,
+        title2: 1.6em 2em,
+        title3: 1.25em 1.5em,
+        base: 1em 1.5em,
+        small: .8em 1em,
+        smaller: .7em 1em
+);
+//Font weigth
+$light:300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;

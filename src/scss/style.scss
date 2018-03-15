@@ -1,0 +1,47 @@
+// Config
+@import "config/vars",
+        "config/mixins";
+
+//Vendors
+@import 'vendors/google-fonts';
+@import 'vendors/hamburgers';
+@import 'vendors/icomoon';
+//@import '~hamburgers';
+
+
+//Components
+@import 'components/basic_reset',
+        'components/navigation_off_canvas',
+        'components/header_poster',
+        'components/sentence',
+        'components/youtube_video',
+        'components/header_video',
+        'components/google_map',
+        'components/contact_form',
+        'components/progressbar',
+        'components/social_media',
+        'components/contact_items',
+        'components/section',
+        'components/button',
+        'components/section_quien_soy',
+        'components/section_experiencia',
+        'components/section_education',
+        'components/section_portafolio',
+        'components/section_contacto',
+        'components/lista_imagenes',
+        'components/timeline',
+        'components/labors',
+        'components/footer',
+        'components/test';
+
+//layout
+@import 'layout/layout';
+
+// Theme
+@import "themes/typography";
+
+//Pages
+@import 'pages/home';
+
+//Utilities
+@import 'pages/utilities';

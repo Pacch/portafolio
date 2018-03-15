@@ -1,0 +1,108 @@
+//-CSS de instagram layout
+//-
+// .instagram{
+//     &__container{
+//         display: grid;
+//         grid-template-columns: repeat(3, minmax(100px,293px));
+//         grid-gap: 3px;
+//         justify-content: center;
+//         @media screen and (min-width: 768px){
+//             grid-gap: 28px;
+//         }
+//     }
+//     &__item{
+//         border:1px solid black;
+//         cursor: pointer;
+//         position: relative;
+//         &:hover{
+//             .instagram__overlay{
+//                 display: flex;
+//             }
+//         }
+//     }
+//     &__overlay{
+//         display: none;
+//         background: rgba(0,0,0,.4);
+//         position: absolute;
+//         content:"";
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         color: white;
+//         text-align: center;
+//     }
+//     &__imagen{
+//         width: 100%;
+//     }
+// }
+
+// @media screen and(min-width: 768px){
+//     grid-gap: 3px;
+// }
+//-
+//-
+//-CSS de pinterest LAYOUT  
+
+// .pinterest{
+        
+//     &__container{
+//         display: grid;
+//         grid-template-columns: repeat(auto-fill,250px);
+//         grid-gap: 5px;
+//         justify-content: center;
+//         // @media screen and (min-width: 768px){
+//         //     grid-gap: 28px;
+//         // }
+//     }
+//     &__item{
+//         background: #f2f2f2;
+//         border-radius: 5px;
+//         padding: 5px;
+//         // border:1px solid black;
+//         cursor: pointer;
+//         position: relative;
+//         &:hover{
+//             .instagram__overlay{
+//                 display: flex;
+//             }
+//         }
+//     }
+//     &__overlay{
+//         display: none;
+//         background: rgba(0,0,0,.4);
+//         position: absolute;
+//         content:"";
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         color: white;
+//         text-align: center;
+//     }
+//     &__imagen{
+//         height: 100%;
+//         width: 100%;
+//     }
+// }
+
+// .level-1{
+//     grid-row-end: span 3;
+// }
+// .level-2{
+//     grid-row-end: span 2;
+// }
+// .level-3{
+//     grid-row-end: span 1;
+// }
+
+
+
+// css de landing de platzi
+
+
+// .landing{
+//     background: #23475b;
+//     color: white;
+//     padding: 32px 15px;
+// }

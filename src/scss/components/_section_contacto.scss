@@ -1,0 +1,26 @@
+.contacto{
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title"
+                             "contact-info"
+                             "form"
+                             "map";
+        grid-gap: 2em 0;
+                            
+    }
+    &__title{
+        grid-area: title;
+    }
+    // &__contact-info{
+        
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    &__contact-field{
+    }
+    // &__form{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}

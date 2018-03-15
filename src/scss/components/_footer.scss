@@ -1,0 +1,16 @@
+.footer{
+    background: #333;
+    color: #ccc;
+    &__container{
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-areas: "author"
+                            "social-media";
+    }
+    &__author{
+        grid-area: author;
+        font-size: .9em;
+        text-align: center;
+    }
+}

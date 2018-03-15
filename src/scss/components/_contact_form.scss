@@ -1,0 +1,60 @@
+.ContactForm {
+  grid-area: form;
+
+  &-title {
+    font-size: 1em;
+    color: red;
+
+    @media screen and (min-width:64em) { font-size: 1em; }
+  }
+
+  // & [required]:invalid { background-color: rgba(220, 20, 60, .2); }
+
+  // & [required]:valid { background-color: rgba(60, 179, 113, .2); }
+
+  & [required]:focus {
+    // background-color: rgba(255, 255, 255, .2);
+    // outline: 0;
+  }
+
+  & > input[type=text],
+  & > input[type=email],
+  & > textarea {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em auto;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    
+    // background-color: transparent;
+    color: #333;
+    font: {
+      // family: 'Roboto';
+      size: 1em;
+      weight: 300;
+    }
+    resize: none;
+  }
+
+  & > input{
+    &:focus{
+      border-bottom: 1px solid black;
+    }
+  }
+  & > textarea{
+    &:focus{
+      border-bottom: 1px solid #288feb;
+    }
+  }
+
+  & > *::-webkit-input-placeholder {
+    color: 333;
+    font: {
+      family: 'Roboto';
+      size: 1em;
+      weight: $light;
+    }
+  }
+}

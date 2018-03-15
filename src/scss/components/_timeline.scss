@@ -1,0 +1,142 @@
+.timeline{
+    &__container{
+        display: grid;
+        grid-gap: 2em;
+        &--timeline{
+            grid-template-columns: 1fr;
+            // @include from(medium){
+            //     grid-template-columns: repeat(2,1fr);
+            // }
+        }
+        &--image{
+            grid-template-columns: 1fr;
+            @include from(medium){
+                grid-template-columns: 250px 1fr;
+            }
+        }
+    }
+    &__item{
+        display: grid;
+        position: relative;
+        grid-gap: 1em;
+        grid-template-columns: 18px 1fr;
+        grid-template-areas: "timeline left"
+                             "timeline rigth";
+        @include from(medium){
+            grid-template-columns: 250px 18px 1fr;
+            grid-template-areas: "left timeline rigth ";
+        }
+        // &::after{
+        //     background: #333 none repeat scroll 0 0;
+        //     content: "";
+        //     height: 100%;
+        //     position: absolute;
+        //     width: 1px;
+        // }
+
+        &--timeline{
+            grid-template-columns: 18px 1fr;
+            grid-template-areas: "timeline left"
+                                 "timeline rigth";
+            @include from(medium){
+                grid-template-columns: 250px 18px 1fr;
+                grid-template-areas: "left timeline rigth ";
+            }
+            // &::after{
+            //     left: 9px;
+            //     // @include from(medium){
+            //     //     left: initial;
+            //     //     right:9px;
+            //     // }
+            // }
+        }
+        &--image{
+            grid-template-columns: 18px 1fr;
+            grid-template-areas: "timeline rigth";
+            @include from(medium){
+                grid-template-columns: 18px 1fr;
+                grid-template-areas: "timeline rigth ";
+            }
+            &::after{
+                left:9px;
+            }
+        }
+    }
+    &__section-left{
+        grid-area:left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    &__timeline{
+        grid-area:timeline;
+        border-left:1px solid black;
+        position: relative;
+        &:hover{
+            &::after{
+                background: black;
+            }
+        }
+        &::before{
+            background: #333 none repeat scroll 0 0;
+            border-radius: 50%;
+            content: "";
+            height: 12px;
+            left:-6px;
+            position: absolute;
+            width: 12px;
+            z-index: 2;
+        }
+        &::after{
+            background: #fff none repeat scroll 0 0;
+            border-radius: 50%;
+            content: "";
+            height: 8px;
+            position: absolute;
+            left:-4px;
+            top:2px;
+            transition: all .30s linear;
+            width: 8px;
+            z-index: 2;
+        }
+    }
+    &__section-rigth{
+        grid-area:rigth;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 14em;
+    }
+    &__years,&__job,&__curso{
+        color:#333;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__time{
+        color: #aaa;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+    &__link{
+        &--logo{
+        max-width: 12em;
+        }   
+        &--curso{
+            display: grid;
+            grid-gap: 1em;
+        }     
+    }
+    &__logo{
+
+    }
+    &__badge{
+        width: 90%;
+        max-width:4em;
+        border-radius: 50%;
+    }
+}
+

@@ -1,0 +1,16 @@
+mixin progressbar(elements)
+    .progressbar
+        .progressbar__container
+            //- h3.progressbar__title habilidades
+            ul.progressbar__items
+                each el in elements
+                    li.progressbar__item
+                        p.progressbar__name-icon
+                            span.progressbar__name=`${el.name}`
+                            ico.progressbar__icon(class=`${el.ico}`)
+                        section.progress
+                            .progress__container
+                                .progress__item.progress__item--basic basico
+                                .progress__item.progress__item--intermedio intermedio
+                                .progress__item.progress__item--avanzado avanzado
+                                .progress__setsize(class="progress__"+`${el.size}`)
