@@ -3,6 +3,10 @@
         display:grid;
         grid-template-columns: 1fr;
         grid-gap: 1em;
+        @include from(medium){
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 2em 3%;
+        }
     }
     &__item{
         display: grid;
