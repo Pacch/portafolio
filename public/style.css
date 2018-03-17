@@ -1329,7 +1329,8 @@ li {
     font-weight: 300; }
 
 .progressbar {
-  grid-area: skill; }
+  grid-area: skill;
+  z-index: 2; }
   .progressbar__title {
     text-transform: uppercase;
     color: #2196F3;
@@ -1420,6 +1421,10 @@ li {
     color: #333;
     font-weight: 300; }
 
+.section:nth-child(even) {
+  background: #fafafa;
+  padding: 4em 0; }
+
 .section__title {
   text-align: start;
   font-size: 2em;
@@ -1443,6 +1448,7 @@ li {
       .section__container--quiensoy {
         grid-template-areas: "title content" "img content"; } }
   .section__container--contact {
+    grid-gap: 2em 0;
     grid-template-areas: "title" "content" "map"; }
     @media screen and (min-width: 480px) {
       .section__container--contact {
@@ -1451,6 +1457,9 @@ li {
       .section__container--contact {
         grid-template-columns: 23em 1fr;
         grid-template-areas: "title content" "map map"; } }
+  .section__container--portafolio {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "content"; }
 
 .section__content {
   display: grid;
@@ -1461,7 +1470,8 @@ li {
     grid-template-areas: "description" "skill"; }
   .section__content--contact {
     grid-template-columns: 1fr;
-    grid-template-areas: "contact-info" "form"; }
+    grid-template-areas: "contact-info" "form";
+    grid-gap: 4em 0; }
     @media screen and (min-width: 1024px) {
       .section__content--contact {
         grid-template-columns: 1fr 1fr;
@@ -1486,9 +1496,6 @@ li {
     background: #eee;
     color: #333; }
 
-.btn {
-  text-align: center; }
-
 .quiensoy__img {
   grid-area: img;
   border-radius: 50%;
@@ -1508,14 +1515,6 @@ li {
   text-align: start;
   color: #999;
   font-size: 1.2em; }
-
-.portafolio__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2em; }
-
-.contacto__title {
-  grid-area: title; }
 
 .lista-Imagenes__items {
   display: grid;
@@ -1563,9 +1562,6 @@ li {
     @media screen and (min-width: 480px) {
       .timeline__container--image {
         grid-gap: 6em 2em;
-        grid-template-columns: 1fr 1fr; } }
-    @media screen and (min-width: 1024px) {
-      .timeline__container--image {
         grid-template-columns: 15em 1fr; } }
 
 .timeline__item {
@@ -1582,10 +1578,6 @@ li {
     grid-template-columns: 1px 1fr;
     grid-template-areas: "timeline left" "timeline rigth"; }
     @media screen and (min-width: 480px) {
-      .timeline__item--timeline {
-        grid-template-columns: 1fr 1px 1fr;
-        grid-template-areas: "left timeline rigth "; } }
-    @media screen and (min-width: 1024px) {
       .timeline__item--timeline {
         grid-template-columns: 15em 1px 1fr;
         grid-template-areas: "left timeline rigth "; } }
@@ -1604,11 +1596,16 @@ li {
       margin: 1.5em 0; } }
   .timeline__section--left {
     grid-area: left; }
+    @media screen and (min-width: 480px) {
+      .timeline__section--left {
+        justify-self: center; } }
     @media screen and (min-width: 1024px) {
       .timeline__section--left {
         justify-self: end; } }
   .timeline__section--rigth {
-    grid-area: rigth; }
+    grid-area: rigth;
+    display: grid;
+    grid-gap: 2em 0; }
 
 .timeline__timeline {
   grid-area: timeline;
@@ -1667,6 +1664,10 @@ li {
   max-width: 4em;
   border-radius: 50%;
   transition: .3s; }
+
+.timeline__items--job {
+  display: grid;
+  grid-gap: 1em 0; }
 
 .labors__item {
   color: #aaa;
@@ -1775,8 +1776,6 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 4em; }
-  .Home .Poster-title {
-    letter-spacing: 0; }
 
 .u-center {
   text-align: center; }

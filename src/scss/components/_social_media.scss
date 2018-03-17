@@ -8,13 +8,11 @@
   &__item { list-style-type: none; }
 
   &__link {
-    // font-size: 10vw;
     color: #eee;;
 
     &:hover { color: $color_rojo; }
 
     @media screen and (min-width:48em) {
-      //  font-size: 5vw; 
       }
   }
 }

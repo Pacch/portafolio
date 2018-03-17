@@ -1,4 +1,8 @@
 .section{
+    &:nth-child(even){
+        background: #fafafa;
+        padding: 4em 0;
+    }
     &__title{
     text-align : start;
     font-size: 2em;
@@ -27,6 +31,7 @@
             }
         }
         &--contact{
+            grid-gap: 2em 0;
             grid-template-areas:    "title"
                                     "content"
                                     "map";
@@ -39,6 +44,11 @@
                                     "map map";
 
             }
+        }
+        &--portafolio{
+            grid-template-columns: 1fr;
+            grid-template-areas:    "title"
+                                    "content";
         }
     }
     &__content{
@@ -53,6 +63,7 @@
             grid-template-columns: 1fr;
             grid-template-areas:    "contact-info"
                                     "form";
+            grid-gap: 4em 0;
             @include from(large){
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: " contact-info form";
@@ -60,25 +71,3 @@
         }
     }
 }
-
-// display: grid;
-// grid-gap: 2em 0;
-// @include from(large){
-//     grid-template-columns: 250px 1fr 1fr;
-//     grid-template-areas: "title contact-info form"
-//                          "map map map";
-// }
-
-// &__container{
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-areas: "title"
-//                             "job";
-//     grid-gap: 2em;
-//     @include from(large){
-//         grid-template-columns: 23em 1fr;
-//         grid-template-areas: "title job";
-//     }
-// }
-
-  

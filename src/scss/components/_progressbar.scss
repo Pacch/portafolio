@@ -1,5 +1,6 @@
 .progressbar{
     grid-area: skill;
+    z-index: 2;
     &__title{
         text-transform: uppercase;
         color: #2196F3;
@@ -58,4 +59,4 @@
     &__avanzado{
         width:100%;
     }
-  }
+}

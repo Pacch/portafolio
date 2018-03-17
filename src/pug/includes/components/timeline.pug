@@ -10,6 +10,6 @@ mixin timeline(timelines)
                         .timeline__timeline
                         .timeline__section.timeline__section--rigth
                             p.timeline__job=`${timeline.job}`
-                            ul
+                            ul.timeline__items.timeline__items--job
                                 each item in timeline.labor
                                     li=`${item}`

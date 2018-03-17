@@ -3,11 +3,9 @@
         "config/mixins";
 
 //Vendors
-@import 'vendors/google-fonts';
-@import 'vendors/hamburgers';
-@import 'vendors/icomoon';
-//@import '~hamburgers';
-
+@import 'vendors/google-fonts',
+        'vendors/hamburgers',
+        'vendors/icomoon';
 
 //Components
 @import 'components/basic_reset',
@@ -24,10 +22,6 @@
         'components/section',
         'components/button',
         'components/section_quien_soy',
-        'components/section_experiencia',
-        'components/section_education',
-        'components/section_portafolio',
-        'components/section_contacto',
         'components/lista_imagenes',
         'components/timeline',
         'components/labors',

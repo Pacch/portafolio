@@ -13,9 +13,6 @@
             grid-template-columns: 1fr;
             @include from(medium){
                 grid-gap: 6em 2em;
-                grid-template-columns: 1fr 1fr;
-            }
-            @include from(large){
                 grid-template-columns: 15em 1fr;
             }
         }
@@ -31,33 +28,15 @@
             grid-template-columns: 15em 1px 1fr;
             grid-template-areas: "left timeline rigth ";
         }
-        // &::after{
-        //     background: #333 none repeat scroll 0 0;
-        //     content: "";
-        //     height: 100%;
-        //     position: absolute;
-        //     width: 1px;
-        // }
 
         &--timeline{
             grid-template-columns: 1px 1fr;
             grid-template-areas: "timeline left"
                                  "timeline rigth";
             @include from(medium){
-                grid-template-columns: 1fr 1px 1fr;
-                grid-template-areas: "left timeline rigth ";
-            }
-            @include from(large){
                 grid-template-columns: 15em 1px 1fr;
                 grid-template-areas: "left timeline rigth ";
             }
-            // &::after{
-            //     left: 9px;
-            //     // @include from(medium){
-            //     //     left: initial;
-            //     //     right:9px;
-            //     // }
-            // }
         }
         &--image{
             grid-template-columns: 1px 1fr;
@@ -66,9 +45,6 @@
                 grid-template-columns: 1px 1fr;
                 grid-template-areas: "timeline rigth ";
             }
-            // &::after{
-            //     left:9px;
-            // }
         }
     }
     &__section{
@@ -78,12 +54,17 @@
         }
         &--left{
             grid-area:left;
+            @include from (medium){
+                justify-self: center;
+            }
             @include from(large){
                 justify-self: end;
             }
         }
         &--rigth{
             grid-area:rigth;
+            display: grid;
+            grid-gap: 2em 0 ;
         }
     }
     &__timeline{
@@ -124,6 +105,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+
     &__time{
         color: #aaa;
         font-weight: 400;
@@ -158,6 +140,12 @@
         max-width:4em;
         border-radius: 50%;
         transition: .3s;
+    }
+    &__items{
+        &--job{
+            display: grid;
+            grid-gap: 1em 0;
+        }
     }
 }
 
