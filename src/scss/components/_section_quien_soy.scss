@@ -1,18 +1,6 @@
 .quiensoy{
     &__container{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-areas: "title"
-                             "img"
-                             "description"
-                             "skill";
-        grid-gap: 2em;
-        @include from(large){
-            grid-template-columns: 250px 1fr;            
-            grid-template-areas:    "title description"
-                                    "img skill";
-            grid-gap: 2em;
-        }
+
     }
 
     &__img{

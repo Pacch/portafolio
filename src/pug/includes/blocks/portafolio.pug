@@ -2,36 +2,37 @@ include ../components/lista_imagenes.pug
 section.portafolio
     .portafolio__container.l-container.l-section
         h2.portafolio__title.section__title portafolio
-        +listaImagenes([
-            {
-                'link': 'https://pacch.github.io/Arduinos/app/',
-                'repositorio':'https://github.com/Pacch/ERP',
-                'img': 'img/arduinos.jpg',
-                'alt': 'arduinos'
-            },
-            {
-                'link': 'https://github.com/Pacch/Flati',
-                'repositorio':'https://github.com/Pacch/ERP',
-                'img': 'img/flati.jpg',
-                'alt': 'flati'
-            },
-            {
-                'link': 'https://pacch.github.io/ERP/',
-                'repositorio':'https://github.com/Pacch/ERP',
-                'img': 'img/peru-erp.jpg',
-                'alt': 'peru-erp'
-            },
+        .section__content.section__content--experiencia-laboral
+            +listaImagenes([
+                {
+                    'link': 'https://pacch.github.io/Arduinos/app/',
+                    'repositorio':'https://github.com/Pacch/ERP',
+                    'img': 'img/arduinos.jpg',
+                    'alt': 'arduinos'
+                },
+                {
+                    'link': 'https://github.com/Pacch/Flati',
+                    'repositorio':'https://pacch.github.io/Flati/app/',
+                    'img': 'img/flati.jpg',
+                    'alt': 'flati'
+                },
+                {
+                    'link': 'https://pacch.github.io/ERP/',
+                    'repositorio':'https://pacch.github.io/ERP/',
+                    'img': 'img/peru-erp.jpg',
+                    'alt': 'peru-erp'
+                },
 
-            {
-                'link': 'https://pacch.github.io/Arduinos/app/',
-                'repositorio':'https://github.com/Pacch/ERP',
-                'img': 'img/kyoshi.jpg',
-                'alt': 'kyoshi'
-            },
-            {
-                'link': 'https://pacch.github.io/Arduinos/app/',
-                'repositorio':'https://github.com/Pacch/ERP',
-                'img': 'img/invie.jpg',
-                'alt': 'invie'
-            }
-        ])
+                {
+                    'link': 'https://pacch.github.io/KyoshisBG/app/',
+                    'repositorio':'https://github.com/Pacch/KyoshisBG',
+                    'img': 'img/kyoshi.jpg',
+                    'alt': 'kyoshi'
+                },
+                {
+                    'link': 'https://pacch.github.io/invie/',
+                    'repositorio':'https://github.com/Pacch/invie',
+                    'img': 'img/invie.jpg',
+                    'alt': 'invie'
+                }
+            ])

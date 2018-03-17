@@ -1,9 +1,84 @@
-.section__title {
+.section{
+    &__title{
     text-align : start;
     font-size: 2em;
     text-transform: uppercase;
     color: #333;
     line-height: 1.2;
-  }
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "title"
+                                "content";
+        grid-gap: 2em;
+        @include from(large){
+            grid-template-columns: 23em 1fr;
+            grid-template-areas: "title content";
+        }
+        &--quiensoy{
+            grid-template-areas:    "title"
+                                    "img"
+                                    "content";
+            grid-template-rows: max-content;
+            @include from(large){           
+                grid-template-areas:    "title content"
+                                        "img content";
+            }
+        }
+        &--contact{
+            grid-template-areas:    "title"
+                                    "content"
+                                    "map";
+            @include from (medium){
+                grid-gap: 6em 2em;
+            }
+            @include from(large){
+                grid-template-columns: 23em 1fr;
+                grid-template-areas:    "title content"
+                                    "map map";
+
+            }
+        }
+    }
+    &__content{
+        display: grid;
+        grid-gap: 2em;
+        &--quiensoy{
+            grid-area: content;
+            grid-template-columns: 1fr;
+            grid-template-areas: "description" "skill";
+        }
+        &--contact{
+            grid-template-columns: 1fr;
+            grid-template-areas:    "contact-info"
+                                    "form";
+            @include from(large){
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: " contact-info form";
+            }
+        }
+    }
+}
+
+// display: grid;
+// grid-gap: 2em 0;
+// @include from(large){
+//     grid-template-columns: 250px 1fr 1fr;
+//     grid-template-areas: "title contact-info form"
+//                          "map map map";
+// }
+
+// &__container{
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-areas: "title"
+//                             "job";
+//     grid-gap: 2em;
+//     @include from(large){
+//         grid-template-columns: 23em 1fr;
+//         grid-template-areas: "title job";
+//     }
+// }
 
   

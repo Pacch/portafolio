@@ -8,7 +8,7 @@ mixin timelineImage(timelines)
                     each item in timeline.item
                         li.timeline__item.timeline__item--image
                             .timeline__timeline
-                            .timeline__section-rigth
+                            .timeline__section.timeline__section--rigth
                                 a.timeline__link--curso(href=`${item.link}`,target="_blank")
                                     p.timeline__curso=`${item.curso}`
                                     img.timeline__badge(src=`${item.badge}`, alt=`${item.curso}`)

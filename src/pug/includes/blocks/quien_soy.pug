@@ -1,58 +1,59 @@
 include ../components/progressbar.pug
 section.quiensoy
-    .quiensoy__container.l-container.l-section
+    .section__container.section__container--quiensoy.l-container.l-section
         h2.quiensoy__title.section__title quien soy
         img.quiensoy__img(src="img/quiensoy.jpg", alt="Harol_Esquivel")
-        p.quiensoy__description.base Egresado del instituto Superior Tecnológico Publico Argentina, de la carrera computación e informática, especializado en desarrollo front-end. Poseo la habilidad de integrarme fácilmente en equipos de trabajo y la capacidad de trabajar en ambientes bajo presión. Autodidacta con ganas de aprender nuevas tecnologías y embarcarme en nuevos retos.
-        +progressbar([
-            {
-                'name': 'html5',
-                'ico':'icon-html5',
-                'size': 'intermedio'
-            },
-            {
-                'name': 'css',
-                'ico':'icon-css3',
-                'size': 'intermedio'
-            },
-            {
-                'name': 'javascritp',
-                'ico':'icon-javascript',
-                'size': 'basico'
-            },
-            {
-                'name': 'jquery',
-                'ico':'icon-jquery',
-                'size': 'basico'
-            },
-            {
-                'name': 'bootstrap 3 y 4',
-                'ico':'icon-bootstrap',
-                'size': 'basico'
-            },
-            {
-                'name': 'git y github',
-                'ico':'icon-github',
-                'size': 'basico'
-            },
-            {
-                'name': 'sass',
-                'ico':'icon-sass',
-                'size': 'basico'
-            },
-            {
-                'name': 'gulp',
-                'ico':'icon-gulp',
-                'size': 'basico'
-            },
-            {
-                'name': 'laravel',
-                'ico':'icon-laravel',
-                'size': 'basico'
-            },
-            {
-                'name': 'php',
-                'ico':'icon-php',
-                'size': 'basico'
-            }
-        ])
+        .section__content.section__content--quiensoy
+            p.quiensoy__description.base Egresado del instituto Superior Tecnológico Publico Argentina, de la carrera computación e informática, especializado en desarrollo front-end. Poseo la habilidad de integrarme fácilmente en equipos de trabajo y la capacidad de trabajar en ambientes bajo presión. Autodidacta con ganas de aprender nuevas tecnologías y embarcarme en nuevos retos.
+            +progressbar([
+                {
+                    'name': 'html5',
+                    'ico':'icon-html5',
+                    'size': 'intermedio'
+                },
+                {
+                    'name': 'css',
+                    'ico':'icon-css3',
+                    'size': 'intermedio'
+                },
+                {
+                    'name': 'javascritp',
+                    'ico':'icon-javascript',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'jquery',
+                    'ico':'icon-jquery',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'bootstrap 3 y 4',
+                    'ico':'icon-bootstrap',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'git y github',
+                    'ico':'icon-github',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'sass',
+                    'ico':'icon-sass',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'gulp',
+                    'ico':'icon-gulp',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'laravel',
+                    'ico':'icon-laravel',
+                    'size': 'basico'
+                },
+                {
+                    'name': 'php',
+                    'ico':'icon-php',
+                    'size': 'basico'
+                }
+            ])

@@ -1,26 +1,27 @@
 include ../components/contact_items.pug
 include ../components/contact_form.pug
 section.contacto
-    .contacto__container.l-container.l-section
+    .section__container.section__container--contact.l-container.l-section
         h2.contacto__title.section__title contacto
-        +contacItems([
-            {
-                'ico': 'icon-map-marker',
-                'name':'direccion',
-                'description':'Jiron callao 937 int #9, Lima Perú',
-            },
-            {
-                'ico': 'icon-envelope-o',
-                'name':'correo',
-                'description':'harolesquivel92@gmail.com',
-            },
-            {
-                'ico': 'icon-mobile',
-                'name':'telefono',
-                'description':'(+51) 910720650',
-            },
-        ])
-        +contactForm
+        .section__content.section__content--contact
+            +contacItems([
+                {
+                    'ico': 'icon-map-marker',
+                    'name':'direccion',
+                    'description':'Jiron callao 937 int #9, Lima Perú',
+                },
+                {
+                    'ico': 'icon-envelope-o',
+                    'name':'correo',
+                    'description':'harolesquivel92@gmail.com',
+                },
+                {
+                    'ico': 'icon-mobile',
+                    'name':'telefono',
+                    'description':'(+51) 910720650',
+                },
+            ])
+            +contactForm
         .GoogleMap
 
         

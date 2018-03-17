@@ -3,29 +3,32 @@
         display: grid;
         &--timeline{
             grid-template-columns: 1fr;
-            grid-gap: 2em;
+            grid-gap: 0 2em;
             // @include from(medium){
             //     grid-template-columns: repeat(2,1fr);
             // }
         }
         &--image{
-            grid-gap: 2em;
+            grid-gap: 4em 2em;
             grid-template-columns: 1fr;
             @include from(medium){
-                grid-gap: 6em 1em;
-                grid-template-columns: 2fr 1fr;
+                grid-gap: 6em 2em;
+                grid-template-columns: 1fr 1fr;
+            }
+            @include from(large){
+                grid-template-columns: 15em 1fr;
             }
         }
     }
     &__item{
         display: grid;
         position: relative;
-        grid-gap: 1em;
-        grid-template-columns: 18px 1fr;
+        grid-gap: 0 2em;
+        grid-template-columns: 1px 1fr;
         grid-template-areas: "timeline left"
                              "timeline rigth";
         @include from(medium){
-            grid-template-columns: 250px 18px 1fr;
+            grid-template-columns: 15em 1px 1fr;
             grid-template-areas: "left timeline rigth ";
         }
         // &::after{
@@ -37,15 +40,15 @@
         // }
 
         &--timeline{
-            grid-template-columns: 18px 1fr;
+            grid-template-columns: 1px 1fr;
             grid-template-areas: "timeline left"
                                  "timeline rigth";
             @include from(medium){
-                grid-template-columns: 1fr 18px 1fr;
+                grid-template-columns: 1fr 1px 1fr;
                 grid-template-areas: "left timeline rigth ";
             }
             @include from(large){
-                grid-template-columns: 250px 18px 1fr;
+                grid-template-columns: 15em 1px 1fr;
                 grid-template-areas: "left timeline rigth ";
             }
             // &::after{
@@ -57,23 +60,31 @@
             // }
         }
         &--image{
-            grid-template-columns: 18px 1fr;
+            grid-template-columns: 1px 1fr;
             grid-template-areas: "timeline rigth";
             @include from(medium){
-                grid-template-columns: 18px 1fr;
+                grid-template-columns: 1px 1fr;
                 grid-template-areas: "timeline rigth ";
             }
-            &::after{
-                left:9px;
-            }
+            // &::after{
+            //     left:9px;
+            // }
         }
     }
-    &__section-left{
-        grid-area:left;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    
+    &__section{
+        margin: 1em 0;
+        @include from(medium){
+            margin: 1.5em 0;
+        }
+        &--left{
+            grid-area:left;
+            @include from(large){
+                justify-self: end;
+            }
+        }
+        &--rigth{
+            grid-area:rigth;
+        }
     }
     &__timeline{
         grid-area:timeline;
@@ -107,13 +118,6 @@
             z-index: 2;
         }
     }
-    &__section-rigth{
-        grid-area:rigth;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        max-width: 14em;
-    }
     &__years,&__job,&__curso{
         color:#333;
         font-weight: 500;
@@ -130,10 +134,20 @@
     &__link{
         &--logo{
         max-width: 12em;
+        @include from (medium){
+            justify-self: center;
+        }
+
         }   
         &--curso{
             display: grid;
-            grid-gap: 1em;
+            grid-gap: 2em 0;
+
+            &:hover{
+                .timeline__badge{
+                    max-width: 4.5em;
+                }
+            }
         }     
     }
     &__logo{
@@ -143,6 +157,7 @@
         width: 90%;
         max-width:4em;
         border-radius: 50%;
+        transition: .3s;
     }
 }
 

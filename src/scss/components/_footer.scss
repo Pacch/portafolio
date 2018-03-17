@@ -7,6 +7,10 @@
         grid-template-columns: 1fr;
         grid-template-areas: "author"
                             "social-media";
+        @include from(large){
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "author social-media";
+        }
     }
     &__author{
         grid-area: author;

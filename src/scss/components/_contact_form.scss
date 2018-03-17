@@ -1,10 +1,11 @@
 .ContactForm {
-  grid-area: form;
-
-  &-title {
-    font-size: 1em;
-    color: red;
-
+	display: grid;
+    grid-gap: 2em;
+    grid-area: form;
+    grid-template-rows: repeat(2,2em) 8em 3em;
+  	&-title {
+		font-size: 1em;
+		color: red;
     @media screen and (min-width:64em) { font-size: 1em; }
   }
 
@@ -22,16 +23,11 @@
   & > textarea {
     display: block;
     width: 100%;
-    padding: 1em;
-    margin: 1em auto;
     border: 0;
     border-bottom: 1px solid #eee;
     outline: none;
-    
-    // background-color: transparent;
     color: #333;
     font: {
-      // family: 'Roboto';
       size: 1em;
       weight: 300;
     }

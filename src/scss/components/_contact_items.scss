@@ -1,5 +1,9 @@
 .contact{
     grid-area: contact-info;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    grid-template-rows: repeat(3,4em) 3em;
     &__items{
         display: grid;
         grid-template-columns: 1fr;
@@ -13,23 +17,23 @@
         grid-gap: 0 1em;
     } 
     &__ico{
-        grid-area: ico;
-        font-size: 1.2em;
+        background: #333;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
         &--contact{
 
         }
     }
     &__ico-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: .5em;
-        background: #333;
-        color: white;
-        border-radius: 50%;
+        align-self: center;
     }
     &__name-section{
         grid-area: name;
+        align-self: center;
         text-transform: uppercase;
         color: #aaa;
     }

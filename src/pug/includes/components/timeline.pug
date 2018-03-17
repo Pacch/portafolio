@@ -4,11 +4,11 @@ mixin timeline(timelines)
             ul.timeline__items.timeline__items--timeline
                 each timeline in timelines
                     li.timeline__item.timeline__item--timeline
-                        .timeline__section-left
+                        .timeline__section.timeline__section--left
                             p.timeline__years=`${timeline.years}`
                             p.timeline__time=`${timeline.time}`
                         .timeline__timeline
-                        .timeline__section-rigth
+                        .timeline__section.timeline__section--rigth
                             p.timeline__job=`${timeline.job}`
                             ul
                                 each item in timeline.labor
