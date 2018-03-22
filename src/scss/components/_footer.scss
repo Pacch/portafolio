@@ -2,6 +2,7 @@
     background: #333;
     color: #ccc;
     &__container{
+        padding: 2em 0;
         display: grid;
         grid-gap: 2em;
         grid-template-columns: 1fr;

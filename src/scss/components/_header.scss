@@ -1,0 +1,271 @@
+.header{
+    background: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 4.8em;
+        grid-template-areas: "logo . burguer";
+        @include from(large){
+            grid-template-columns: auto 1fr;
+            grid-template-areas: "logo menu";
+            grid-gap: 12em;
+        }
+    }
+    &__logo{
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+    }
+    &__burguer{
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+        grid-area: burguer;
+        &:hover{
+            color: rgba($color: #333, $alpha: .4);
+        }
+        @include from(large){
+            display: none;
+        }
+    }
+    &__navigation{
+        grid-area: menu;
+        display: none;
+        @include from(large){
+            display: block;
+            align-self: center;
+        }
+    }
+    &__ico{
+        font-size: 2em;
+        color: #333;
+    }
+}
+
+.logo{
+    &__link{
+        display: block;
+        align-self: center;
+        // background: url("img/esquivel-logo.jpg");
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center;
+    }
+    &__letra{
+
+        &--capital{
+            font-size: 1.2em;
+            background: #333;
+            color: white;
+            padding: .1em .4em;
+            border-radius: 5px;
+        }
+        &--frase{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #333;
+            font-size: .8em;
+        }
+    }    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    &__items{
+
+    }
+    &__item{
+        
+    }
+    &__link{
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+// $header-bg-op-0: rgba(23, 18, 38, 0);
+// $header-bg-op-1: rgba(23, 18, 38, .2);
+// $header-color: #FFF;
+// $header-height: 4rem;
+// $header-container-width: 1200px;
+
+// $logo-url: './img/esquivel-logo.jpg';
+// $logo-width: 10rem;
+// $logo-height: 3rem;
+// $logo-bg-size: 3.5rem;
+
+// $header-area: '. logo hamburger'; // 'logo . hamburger' | '. logo hamburger' | 'hamburger . logo' | 'hamburger logo .'
+// $logo-position: center; //start | center | end
+// $hamburger-position: end; //start | end
+
+// $hamburger-color: $color_primario;
+
+// @mixin panel-direction($dir) {
+//   @if $dir == left {
+//     transform: translateX(-100%);
+//     &.is-active { transform: translateX(0); }
+//   } @else if $dir == right {
+//     transform: translateX(100%);
+//     &.is-active { transform: translateX(0); }
+//   } @else if $dir == top {
+//     transform: translateY(-100%);
+//     &.is-active { transform: translateY(0); }
+//   } @else if $dir == bottom {
+//     transform: translateY(100%);
+//     &.is-active { transform: translateY(0); }
+//   }
+// }
+
+// .hamburger:focus {
+//   outline: 0;
+//   border: 0;
+// }
+
+// .hamburger-inner,
+// .hamburger-inner:after,
+// .hamburger-inner:before { background-color: $hamburger-color; }
+
+// .u-afterFixed { padding-top: $header-height; }
+
+// .header {
+//     position: fixed;
+//     z-index: 998;
+//     width: 100%;
+//     height: $header-height;
+//     transition: all .3s ease-out;
+//     background-color: $color_blanco;
+
+//     &.is-active { 
+//         background-color: $header-bg-op-1; 
+//     }
+
+//     &__container {
+//         margin: auto;
+//         max-width: $header-container-width;
+//         display: grid;
+//         grid-template: {
+//             columns: repeat(3, 1fr);
+//             rows: $header-height, auto;
+//             areas: $header-area
+//                     'panel panel panel';
+//         }
+//     }
+// }
+
+// .logo {
+//     z-index: 999;
+//     grid-area: logo;
+//     justify-self: $logo-position;
+//     align-self: center;
+//     &__link {
+//         display: block;
+//         width: $logo-width;
+//         height: $logo-height;
+//         text-indent: -9999px;
+//             background: {
+//                 image: url($logo-url);
+//                 size: contain;
+//                 repeat: no-repeat;
+//                 position: center;
+//             }
+//     }
+// }
+
+// .panel {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     width: 100%;
+//     overflow-y: auto;
+//     grid-area: panel;
+//     background-color: $header-bg-op-1;
+//     transition: transform .3s ease-out;
+//     @include panel-direction(left);
+//     &__button{
+//         z-index: 999;
+//         grid-area: hamburger;
+//         justify-self: $hamburger-position;
+//     }
+// }
+
+// .menu {
+//     margin-top: calc( #{$header-height} + 2rem );
+
+//     &__items {
+//         display: flex;
+//         flex-direction: column;
+//         text-align: center;
+//         list-style: none;
+//     }
+
+//     &__link {
+//         display: block;
+//         padding: 1rem;
+//         text-transform: uppercase;
+//         font: {
+//             weight: $normal;
+//             size: .9em;
+//         }
+//         color: $color_primario;
+//         text-decoration: none;
+//         transition: all .3s ease-out;
+//         &:hover{
+//             color: $color_secundario;
+//         }
+//     }
+
+//     &__link:hover {
+        
+//         // background-color: $hamburger-color;
+//     }
+// }
+
+// @media screen and (min-width: 64em) {
+//     .header{
+//         &__container {
+//             grid-template: {
+//                 columns: auto 1fr;
+//                 rows: $header-height;
+//                 areas: 'logo panel';
+//             }
+//         }
+//     }
+
+//     .logo{ 
+//         justify-self: start; 
+//     }
+
+//     .panel {
+//         position: static;
+//         overflow-y: visible;
+//         transform: translate(0, 0);
+//         background-color: transparent;
+//         &__button{ 
+//             display: none; 
+//         }
+//     }
+
+//     .menu{
+//         margin-top: 0;
+//             &__items {
+//                 flex-direction: row;
+//                 justify-content: flex-end;
+//                 align-items: center;
+//             }
+
+//         &__link { 
+//             border-top: medium solid transparent; 
+//         }
+
+//         &__link:hover {
+//             border-top: medium solid $color_secundario;
+//             background-color: transparent;
+//         }
+//     }
+// }

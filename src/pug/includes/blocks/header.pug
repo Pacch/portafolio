@@ -1,0 +1,14 @@
+mixin header(links)
+	header.header.l-container--full
+		section.header__container.l-container
+			h1.header__logo       
+				a.logo__link(href="./")
+					span.logo__letra.logo__letra--capital E
+					span.logo__letra.logo__letra--frase squivel
+			a.header__burguer
+				ico.header__ico.icon-menu
+			nav.header__navigation
+				ul.header__menu.menu
+					each link in links
+						li.menu__item
+							a.menu__link(href=`${link.link}`)=`${link.seccion}`

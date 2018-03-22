@@ -1,8 +1,28 @@
-mixin headerPoster(image, title, subtitle)
-  article.Poster.u-firstContent(style=`background-image: url(${image});`)
-    div.Poster--opacity
-      h2.Poster-title
-        span= title
-        br
-        span.
-          !{subtitle}
+include ../components/social_media.pug
+mixin headerPoster(image)
+	article.poster.u-firstContent(style=`background-image: url(${image});`)
+		.poster__intro
+			h2.poster__text.poster__text--name Juan Harol Esquivel
+			h2.poster__text.poster__text--profesion Practicante Desarrollador web
+			.poster__description
+				p.description__parrafo.description__parrafo--top Soy un practicante de desarrollo web front-end con más de 3 meses practicando en proyectos personales.
+				p.description__parrafo.description__parrafo--medium estudiando los diferentes lenguajes de programación, bases de datos y sistemas operativos. 
+				p.description__parrafo.description__parrafo--bot  He realizado proyectos personales para demostrar mis conocimientos.
+			aside.social-media.social-media--portada
+				ul.social-media__items
+					li.social-media__item
+						a.social-media__link--portada(href="https://github.com/Pacch", target="_blank")
+							i.social-media__icon.icon-github.social-media__icon--portada
+					li.social-media__item
+						a.social-media__link--portada(href="https://www.linkedin.com/in/juan-harol-esquivel-luera-91baa68b/", target="_blank")
+							i.social-media__icon.icon-linkedin22.social-media__icon--portada
+					li.social-media__item
+						a.social-media__link--portada(href="https://github.com/Pacch", target="_blank")
+							i.social-media__icon.icon-facebook3.social-media__icon--portada
+		.poster__button
+			a.poster__link.poster__link--button(href="#header")
+				ico.poster__ico.icon-angle-double-down
+			
+
+
+			

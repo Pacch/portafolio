@@ -4,9 +4,6 @@
         &--timeline{
             grid-template-columns: 1fr;
             grid-gap: 0 2em;
-            // @include from(medium){
-            //     grid-template-columns: repeat(2,1fr);
-            // }
         }
         &--image{
             grid-gap: 4em 2em;

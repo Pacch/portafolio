@@ -3,8 +3,8 @@ import Hammer from 'hammerjs'
 export default function navigationOffCanvas() {
   const d = document,
     w = window,
-    panel = d.querySelector('.Panel'),
-    panelBtn = d.querySelector('.Panel-button'),
+    panel = d.querySelector('.panel'),
+    panelBtn = d.querySelector('.panel__button'),
     mq = w.matchMedia('(min-width: 64em)'),
     hamburger = d.querySelector('.hamburger'),
     hammerBody = new Hammer(d.body),
