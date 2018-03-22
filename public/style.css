@@ -1291,21 +1291,39 @@ li {
     text-transform: uppercase;
     font-weight: 700; }
     .poster__text--name {
+      font-size: 1em;
       grid-area: name;
-      color: #fff;
-      font-size: 2.5em; }
+      color: #fff; }
+      @media screen and (min-width: 480px) {
+        .poster__text--name {
+          font-size: 2em; } }
+      @media screen and (min-width: 1024px) {
+        .poster__text--name {
+          font-size: 2.5em; } }
     .poster__text--profesion {
       grid-area: profesion;
       color: #2196f3;
-      font-size: 3.5em; }
+      font-size: 1em; }
+      @media screen and (min-width: 480px) {
+        .poster__text--profesion {
+          font-size: 2.5em; } }
+      @media screen and (min-width: 1024px) {
+        .poster__text--profesion {
+          font-size: 3.5em; } }
   .poster__description {
     grid-area: description;
     text-align: center;
     color: #fff;
     font-weight: 300;
     line-height: 2;
-    font-size: .9em;
+    font-size: .7em;
     margin-bottom: 3em; }
+    @media screen and (min-width: 480px) {
+      .poster__description {
+        font-size: .8em; } }
+    @media screen and (min-width: 1024px) {
+      .poster__description {
+        font-size: .9em; } }
   .poster__button {
     margin-bottom: 3em;
     position: absolute;
