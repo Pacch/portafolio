@@ -4,13 +4,12 @@
 // import headerVideo from './components/header_video'
 import googleMaps from './components/google_maps'
 import contactForm from './components/contact_form'
-import toogle from './components/menu_toogle'
+import toggle from './components/menu_toggle'
 
 // navigationOffCanvas()
 // transparentHeader()
 // youtubeVideo()
 googleMaps()
-toogle()
 contactForm()
 
 // if ( location.pathname.includes('contacto') ) {
