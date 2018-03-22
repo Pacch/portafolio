@@ -1,17 +1,23 @@
-include ../components/timeline.pug
 include ../components/timeline_image.pug
 section.education.section#educacion
     .education__container.l-container.l-section.section__container
         h2.education__title.section__title educación
         .section__content.section__content--education
-            +timeline([
-                {
-                    'years': '3 años',
-                    'time': '2012 - 2015',
-                    'job': 'computacion e informatica',
-                    'labor': ['instituto argentina']
-                }
-                ])
+            .timeline
+                .timeline__container.timeline__container--timeline
+                    ul.timeline__items.timeline__items--timeline
+                        li.timeline__item.timeline__item--timeline
+                            .timeline__section.timeline__section--left
+                                p.timeline__years 3 años
+                                p.timeline__time 2012 - 2015
+                            .timeline__timeline
+                            .timeline__section.timeline__section--rigth
+                                p.timeline__job computacion e informatica
+                                ul.timeline__items.timeline__items--job.job
+                                    li.job__item
+                                        a.job__link(href="http://www.istpargentina.edu.pe/")
+                                            img.job__img(src="img/logo-argentina.png", alt="instituto argentian") 
+                                            span.job__text instituto argentina
     .cursos-talleres__container.l-container.l-section.section__container
         h2.cursos-talleres__title.section__title cursos y talleres
         .section__content.section__content--experiencia-laboral

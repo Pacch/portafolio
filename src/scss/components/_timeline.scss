@@ -145,4 +145,32 @@
         }
     }
 }
+.job{
+    &__item{
+
+    }
+    &__link{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 1em;
+
+        &:hover{
+            .job__text{
+                font-style: italic;
+            }
+            .job__img{
+                height: 4.2em;
+            }
+        }
+    }
+    &__img{
+        height: 4em;
+        transition: .3s;
+    }
+    &__text{
+        transition: .3s;
+        text-transform: uppercase;
+        align-self: center;
+    }
+}
 

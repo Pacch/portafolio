@@ -949,8 +949,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?nh3uco");
-  src: url("fonts/icomoon.eot?nh3uco#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?nh3uco") format("truetype"), url("fonts/icomoon.woff?nh3uco") format("woff"), url("fonts/icomoon.svg?nh3uco#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?pup0vz");
+  src: url("fonts/icomoon.eot?pup0vz#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?pup0vz") format("truetype"), url("fonts/icomoon.woff?pup0vz") format("woff"), url("fonts/icomoon.svg?pup0vz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1046,6 +1046,9 @@
 
 .icon-mobile:before {
   content: "\e958"; }
+
+.icon-wrench:before {
+  content: "\e991"; }
 
 .icon-menu:before {
   content: "\e9bd"; }
@@ -1702,7 +1705,11 @@ li {
   grid-gap: .5em;
   justify-items: center; }
 
+.lista-Imagenes__link:hover .lista-Imagenes__img {
+  border: .4em solid #191818; }
+
 .lista-Imagenes__img {
+  transition: .3s;
   border: .5em solid #1D1D1D;
   border-radius: 15px; }
 
@@ -1840,6 +1847,24 @@ li {
 .timeline__items--job {
   display: grid;
   grid-gap: 1em 0; }
+
+.job__link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1em; }
+  .job__link:hover .job__text {
+    font-style: italic; }
+  .job__link:hover .job__img {
+    height: 4.2em; }
+
+.job__img {
+  height: 4em;
+  transition: .3s; }
+
+.job__text {
+  transition: .3s;
+  text-transform: uppercase;
+  align-self: center; }
 
 .labors__item {
   color: #aaa;

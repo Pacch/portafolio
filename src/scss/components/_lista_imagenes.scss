@@ -14,9 +14,18 @@
         justify-items: center;
         
     }
+    &__link{
+        &:hover{
+            .lista-Imagenes__img{
+                border: .4em solid #191818;
+            }
+        }
+    }
     &__img{
+        transition: .3s;
         border: .5em solid #1D1D1D;
         border-radius: 15px;
+
     }
 
 }
@@ -30,7 +39,7 @@
         align-items: center;
         transition: .2s;
         &:hover{
-        color: $color_rojo;
+            color: $color_rojo;
         }
         &--repositorio{
 

@@ -1,18 +1,24 @@
-include ../components/timeline.pug
 section.experiencia-laboral.section#experiencia-laboral
     .l-container.l-section.l-grid.section__container
         h2.experiencia-laboral__title.section__title experiencia laboral
         .section__content.section__content--experiencia-laboral
-            +timeline([
-            {
-                'years': '5 años',
-                'time': '2012 - 2017',
-                'job': 'Técnico de celulares Software',
-                'labor':    [  'Soporte de celulares. ', 
-                                'Soporte de computadoras (Mantenimiento preventivo y correctivo).'
-                            ]
-            }
-            ])
+                .timeline
+                    .timeline__container.timeline__container--timeline
+                        ul.timeline__items.timeline__items--timeline
+                            li.timeline__item.timeline__item--timeline
+                                .timeline__section.timeline__section--left
+                                    p.timeline__years 5 años
+                                    p.timeline__time 2012 - 2017
+                                .timeline__timeline
+                                .timeline__section.timeline__section--rigth
+                                    p.timeline__job Técnico de celulares Software
+                                    ul.timeline__items.timeline__items--job
+                                        li
+                                            icon.icon-wrench
+                                            |  Soporte de celulares(Hardware y software).
+                                        li
+                                            icon.icon-wrench
+                                            |  Soporte de computadoras (Mantenimiento preventivo y correctivo).
         
 
 
