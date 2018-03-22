@@ -24,7 +24,7 @@
   </head>
   <body>
     <main class="Home">
-      <article class="poster u-firstContent" style="background-image: url(./img/portada_section.jpg);">
+      <article class="poster u-firstContent" style="background-image: url(./img/portada_section.jpg);" id="inicio">
         <div class="poster__intro">
           <h2 class="poster__text poster__text--name">Juan Harol Esquivel</h2>
           <h2 class="poster__text poster__text--profesion">Practicante Desarrollador web</h2>
@@ -41,7 +41,7 @@
             </ul>
           </aside>
         </div>
-        <div class="poster__button"><a class="poster__link poster__link--button" href="#header">
+        <div class="poster__button"><a class="poster__link poster__link--button scroll-link" href="#quien-soy">
             <ico class="poster__ico icon-angle-double-down"></ico></a></div>
       </article>
       <header class="header l-container--full">
@@ -50,12 +50,12 @@
             <ico class="header__ico icon-menu"></ico></a>
           <nav class="header__navigation">
             <ul class="header__menu menu">
-              <li class="menu__item"><a class="menu__link" href="/">Inicio</a></li>
-              <li class="menu__item"><a class="menu__link" href="#quien-soy">Quien soy</a></li>
-              <li class="menu__item"><a class="menu__link" href="#experiencia-laboral">Experiencia laboral</a></li>
-              <li class="menu__item"><a class="menu__link" href="#educacion">educación</a></li>
-              <li class="menu__item"><a class="menu__link" href="#portafolio">portafolio</a></li>
-              <li class="menu__item"><a class="menu__link" href="#contacto">contacto</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#inicio">Inicio</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#quien-soy">Quien soy</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#experiencia-laboral">Experiencia laboral</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#educacion">educación</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#portafolio">portafolio</a></li>
+              <li class="menu__item"><a class="menu__link scroll-link" href="#contacto">contacto</a></li>
             </ul>
           </nav>
         </section>
@@ -358,13 +358,11 @@
                     </li>
                     <li class="contact__item">
                       <div class="contact__ico-container"><i class="contact__ico ico ico--contact icon-envelope-o"></i></div>
-                      <p class="contact__name-section">correo</p>
-                      <p class="contact__description">harolesquivel92@gmail.com</p>
+                      <p class="contact__name-section">correo</p><a class="contact__description contact__description--link" href="mailto:harolesquivel92@gmail.com">harolesquivel92@gmail.com</a>
                     </li>
                     <li class="contact__item">
                       <div class="contact__ico-container"><i class="contact__ico ico ico--contact icon-mobile"></i></div>
-                      <p class="contact__name-section">telefono</p>
-                      <p class="contact__description">(+51) 910720650</p>
+                      <p class="contact__name-section">telefono</p><a class="contact__description contact__description--link" href="tel:+51910720650">(+51) 910720650</a>
                     </li><a class="btn" href="https://docs.google.com/uc?export=download&amp;id=1zgGU860q9s6Jv01rTgRzr8dY9zCVkJzJ" target="_blank">descargar cv</a>
                   </ul>
                   <form class="ContactForm">
@@ -391,6 +389,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

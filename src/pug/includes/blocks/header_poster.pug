@@ -1,6 +1,6 @@
 include ../components/social_media.pug
 mixin headerPoster(image)
-	article.poster.u-firstContent(style=`background-image: url(${image});`)
+	article.poster.u-firstContent(style=`background-image: url(${image});`)#inicio
 		.poster__intro
 			h2.poster__text.poster__text--name Juan Harol Esquivel
 			h2.poster__text.poster__text--profesion Practicante Desarrollador web
@@ -20,7 +20,7 @@ mixin headerPoster(image)
 						a.social-media__link--portada(href="https://github.com/Pacch", target="_blank")
 							i.social-media__icon.icon-facebook3.social-media__icon--portada
 		.poster__button
-			a.poster__link.poster__link--button(href="#header")
+			a.poster__link.poster__link--button.scroll-link(href="#quien-soy")
 				ico.poster__ico.icon-angle-double-down
 			
 

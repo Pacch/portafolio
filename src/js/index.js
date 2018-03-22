@@ -5,6 +5,7 @@
 import googleMaps from './components/google_maps'
 import contactForm from './components/contact_form'
 import toggle from './components/menu_toggle'
+import scroll from './components/scroll'
 
 // navigationOffCanvas()
 // transparentHeader()

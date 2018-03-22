@@ -1571,6 +1571,10 @@ li {
     grid-area: description;
     color: #333;
     font-weight: 300; }
+    .contact__description--link {
+      color: #2196f3; }
+      .contact__description--link:hover {
+        color: black; }
 
 .section:nth-child(even) {
   background: #fafafa; }

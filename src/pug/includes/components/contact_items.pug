@@ -6,4 +6,15 @@ mixin contacItems(elements)
                     i.contact__ico.ico.ico--contact(class=`${el.ico}`)
                 p.contact__name-section=`${el.name}`
                 p.contact__description=`${el.description}`
+            li.contact__item
+                .contact__ico-container
+                    i.contact__ico.ico.ico--contact.icon-envelope-o
+                p.contact__name-section correo
+                a(href="mailto:harolesquivel92@gmail.com").contact__description.contact__description--link harolesquivel92@gmail.com
+            li.contact__item
+                .contact__ico-container
+                    i.contact__ico.ico.ico--contact.icon-mobile
+                p.contact__name-section telefono
+                a(href="tel:+51910720650").contact__description.contact__description--link (+51) 910720650
+
         a(href="https://docs.google.com/uc?export=download&id=1zgGU860q9s6Jv01rTgRzr8dY9zCVkJzJ" ,target="_blank").btn descargar cv
